@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:zunigarutas/pagina_inicial.dart';
 import 'package:zunigarutas/pantalla_dos.dart';
 import 'package:zunigarutas/pantalla_tres.dart';
+import 'package:zunigarutas/pantalla_cuatro.dart';
+import 'package:zunigarutas/pantalla_cinco.dart';
+import 'package:zunigarutas/pantalla_seis.dart';
+import 'package:zunigarutas/pantalla_siete.dart';
+import 'package:zunigarutas/pantalla_ocho.dart';
+import 'package:zunigarutas/pantalla_nueve.dart';
 
 void main() => runApp(MiRutas());
 
@@ -20,6 +26,12 @@ class MiRutas extends StatelessWidget {
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/pantalla2': (context) => const PantallaDos(),
         '/pantalla3': (context) => const PantallaTres(),
+        '/pantalla4': (context) => const PantallaCuatro(),
+        '/pantalla5': (context) => const PantallaCinco(),
+        '/pantalla6': (context) => const PantallaSeis(),
+        '/pantalla7': (context) => const PantallaSiete(),
+        '/pantalla8': (context) => const PantallaOcho(),
+        '/pantalla9': (context) => const PantallaNueve(),
       },
     );
   }
