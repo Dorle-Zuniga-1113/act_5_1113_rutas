@@ -17,13 +17,35 @@ class PantallaDos extends StatelessWidget {
         ),
         centerTitle: true, // Centrar el texto del título
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Pantalla Inicial!'),
-        ),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            color: Colors.orangeAccent,
+            alignment: Alignment.center,
+            width: double.infinity,
+            height: 300,
+            child: AspectRatio(
+              aspectRatio: 16 / 9,
+              child: Container(
+                color: Colors.blueGrey,
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text('Pantalla Inicial!'),
+            ),
+          ),
+        ],
       ),
     );
   }
